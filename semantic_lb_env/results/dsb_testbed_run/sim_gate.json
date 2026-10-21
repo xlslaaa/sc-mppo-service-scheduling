@@ -1,0 +1,29 @@
+{
+  "bitwise": true,
+  "bitwise_equal_cells": 296,
+  "cells": 296,
+  "columns": [
+    "mean_latency",
+    "p95_latency",
+    "p99_latency",
+    "sla_violation_rate",
+    "throughput_rate",
+    "failure_rate",
+    "mean_normalized_cost",
+    "valid_action_rate",
+    "semantic_match",
+    "deadline_miss_rate_prio_high",
+    "deadline_miss_rate_prio_mid",
+    "deadline_miss_rate_prio_low",
+    "sla_satisfaction_rate",
+    "cost_satisfaction_rate",
+    "failure_satisfaction_rate",
+    "all_constraints_satisfaction_rate",
+    "own_sla_satisfaction_rate",
+    "own_cost_satisfaction_rate",
+    "own_failure_satisfaction_rate",
+    "own_all_constraints_satisfaction_rate"
+  ],
+  "failures": [],
+  "seconds": 325.31380701065063
+}

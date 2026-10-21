@@ -1,0 +1,61 @@
+{
+  "schema": "power_cost_profile/v1",
+  "name": "edge_cloud_3tier_2026-08",
+  "retrieved": "2026-08-26",
+  "purpose": "把 env 的单位成本从 U(0.25,1.0)（溯源 C 级、与节点其余属性完全独立）换成一条由公开功耗规格 + 公开电价/PUE 推导的标尺。定义点 semantic_lb_env/env.py 的 _apply_cost_model。",
+  "assignment": "capacity_rank",
+  "assignment_note": "按 base_capacity（本 env 里就是相对服务速率 ⇒ 机器规格）升序排名切成等份，低速率槽位分到低功率档。排名是确定性的、不消耗任何 RNG，且用的是**耦合乘子施加之前**的 base_capacity，因此本轴与 semantic_qos_coupling 轴正交。",
+  "tiers": [
+    {
+      "name": "gateway",
+      "share": 0.3333333333333333,
+      "power_active_w": 25.0,
+      "grade": "B",
+      "source": "NVIDIA Jetson Orin NX 16GB 的厂商预设功率模式之一（10/15/25/40 W + MAXN SUPER，Jetson Linux R36.4.3 发布说明）；模块整体可配区间 10-40 W 见 NVIDIA Jetson Orin 产品页。",
+      "url": "https://developer.nvidia.com/embedded/jetson-linux-r3643",
+      "caveat": "厂商规格，非本项目实测；取的是中间档 25 W，不是峰值。"
+    },
+    {
+      "name": "edge_server",
+      "share": 0.3333333333333333,
+      "power_active_w": 123.0,
+      "grade": "B",
+      "source": "Dell PowerEdge R570（2U 单路，Intel 第 6 代 P-core）在 Dell 的 SPECpower_ssj2008 性能功耗披露里 active idle = 123 W。",
+      "url": "https://infohub.delltechnologies.com/static/media/client/7phukh/DAM_94d9f6a9-60e7-4bac-b8a2-d6250d227e13.pdf",
+      "caveat": "厂商披露的是 **active idle**，这里当作\"轻载边缘服务器的活动功率\"使用，属对 idle 值的保守复用，论文里必须照写。检索日只拿到搜索摘要级证据（PDF 全文在本机网络下取不到）。"
+    },
+    {
+      "name": "cloud_node",
+      "share": 0.3333333333333333,
+      "power_active_w": 369.0,
+      "grade": "C",
+      "source": "= edge_server 的 123 W × proportionality 3.0。",
+      "url": null,
+      "caveat": "**建模选择，不是引用值**：未取到同代双路服务器满载瓦数的可引用披露，故把 idle→满载倍数显式做成参数。该参数由 scripts/probe_power_cost.py 在 {2.0, 3.0, 4.0} 上扫，敏感性必须与结论同表汇报。"
+    }
+  ],
+  "proportionality": {
+    "value": 3.0,
+    "grade": "C",
+    "note": "只用于导出 cloud_node 档；见该档 caveat。"
+  },
+  "pue": {
+    "value": 1.52,
+    "grade": "B",
+    "source": "Uptime Institute Global Data Center Survey 2026 全行业年均 PUE = 1.52（2025 年调查为 1.54，第六年基本持平）。",
+    "url": "https://intelligence.uptimeinstitute.com/resource/growing-pue-advantage-larger-data-centers",
+    "caveat": "行业调查均值，非本项目所在机房实测。在 cost_iso_scale=True 下该常数**逐位不影响** self.cost（见下方 cancels_under_iso_scale）。"
+  },
+  "tariff_cny_per_kwh": {
+    "value": 0.82,
+    "grade": "B(含折算假设)",
+    "source": "Statista《Business electricity prices in China》：2026-04 中国企业用电 11.6 美分/kWh；按 7.1 CNY/USD 折算 ≈ 0.82 CNY/kWh。",
+    "url": "https://www.statista.com/statistics/1373596/business-electricity-price-china/",
+    "caveat": "口径是\"企业用电\"均值，不区分大工业/一般工商业，也不含分时与容量电费；汇率是折算假设。同样在 cost_iso_scale=True 下逐位不影响 self.cost。"
+  },
+  "cancels_under_iso_scale": [
+    "pue",
+    "tariff_cny_per_kwh"
+  ],
+  "cancels_note": "cost_iso_scale=True 时 self.cost 会被仿射映射回同 seed 合成向量的 [min,max]，任何**共同正因子**在仿射映射里精确消掉 ⇒ PUE 与电价对训练/路由/判定的影响恰为零，只影响 energy_wh_per_request / cost_cny_per_request 这两个描述量。这条由 tests/test_power_cost_model.py 断言。含义：\"把公开电价代进去\"本身不构成对\"成本赢点是否稳健\"的回答，真正被替换的是成本向量的**结构**（与容量/时延的相关性）。"
+}

@@ -1,0 +1,75 @@
+{
+  "cpo_config": {
+    "algo": "cpo",
+    "citation": "CPO = Achiam, Held, Tamar, Abbeel, ICML 2017\uff08**\u539f\u6587\u5f85\u6838**\uff09",
+    "constraint_handling": "multi_constraint_dual_over_nu_lambda_closed_form",
+    "recovery_step": "min_norm_feasible_direction_scaled_to_trust_region",
+    "cost_limits_per_step": {
+      "sla": 0.115,
+      "cost": 0.457,
+      "failure": 0.031
+    },
+    "cost_limits_return": {
+      "sla": 3.7342079915930397,
+      "cost": 14.83941784485234,
+      "failure": 1.0066125890381237
+    },
+    "constraint_names": [
+      "sla",
+      "cost",
+      "failure"
+    ],
+    "cost_gamma": 0.97,
+    "cost_gae_lambda": 0.92,
+    "cost_episode_len": 120,
+    "discount_horizon": 32.471373839939474,
+    "cost_net_arch": [
+      64,
+      64
+    ],
+    "normalize_cost_advantage": false,
+    "normalize_advantage": true,
+    "target_kl": 0.01,
+    "cg_max_steps": 15,
+    "cg_damping": 0.1,
+    "line_search_shrinking_factor": 0.8,
+    "line_search_max_iter": 10,
+    "n_critic_updates": 10,
+    "gamma": 0.97,
+    "gae_lambda": 0.92,
+    "n_steps": 256,
+    "batch_size": 128,
+    "learning_rate_initial": 0.0003,
+    "n_train_calls": 118,
+    "case_counts": {
+      "trpo": 0,
+      "constrained": 0,
+      "recovery": 118
+    },
+    "line_search_success_rate": 1.0,
+    "total_timesteps_effective": 30208,
+    "nominal_workload_seed": 83,
+    "effective_sb3_seed": 77,
+    "torch_threads": {
+      "intra_op": 1,
+      "interop": 20,
+      "OMP_NUM_THREADS": null,
+      "MKL_NUM_THREADS": null,
+      "OPENBLAS_NUM_THREADS": null
+    }
+  },
+  "diagnostic": {
+    "cell": "C0p",
+    "seed": 77,
+    "threads": 1,
+    "wall_seconds": 63.3,
+    "cpu_affinity": [
+      13
+    ]
+  },
+  "constraint_limits": {
+    "sla": 0.115,
+    "cost": 0.457,
+    "failure": 0.031
+  }
+}

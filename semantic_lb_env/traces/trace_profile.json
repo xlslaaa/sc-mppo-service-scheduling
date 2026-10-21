@@ -1,0 +1,286 @@
+{
+  "sources": {
+    "dsb": "../DeathStarBench-master/ms_collecter/trace.csv",
+    "alibaba_rtqps": "../clusterdata-master/cluster-trace-microservices-v2021/data/MSRTQps"
+  },
+  "latency": {
+    "quantile_levels": [
+      0.0,
+      0.05,
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      0.9,
+      0.95,
+      0.99,
+      1.0
+    ],
+    "num_services": 12,
+    "total_spans": 640,
+    "services": {
+      "compose-post-service": {
+        "count": 160,
+        "latency_ms_quantiles": [
+          0.112,
+          0.137,
+          0.1541,
+          0.341,
+          0.5755,
+          1.194,
+          3.2146,
+          3.5486,
+          5.6447,
+          11.87
+        ],
+        "latency_ms_mean": 1.1019,
+        "latency_ms_std": 1.4424,
+        "call_frequency": 0.25
+      },
+      "home-timeline-service": {
+        "count": 60,
+        "latency_ms_quantiles": [
+          0.006,
+          0.006,
+          0.007,
+          0.009,
+          0.473,
+          0.5553,
+          0.6719,
+          0.8053,
+          0.9489,
+          0.979
+        ],
+        "latency_ms_mean": 0.3795,
+        "latency_ms_std": 0.2841,
+        "call_frequency": 0.09375
+      },
+      "media-service": {
+        "count": 20,
+        "latency_ms_quantiles": [
+          0.005,
+          0.006,
+          0.006,
+          0.006,
+          0.007,
+          0.008,
+          0.008,
+          0.0081,
+          0.0088,
+          0.009
+        ],
+        "latency_ms_mean": 0.0071,
+        "latency_ms_std": 0.001,
+        "call_frequency": 0.03125
+      },
+      "nginx-web-server": {
+        "count": 40,
+        "latency_ms_quantiles": [
+          2.931,
+          3.1048,
+          3.1707,
+          3.4535,
+          3.799,
+          4.3927,
+          5.4248,
+          6.9211,
+          12.6421,
+          12.788
+        ],
+        "latency_ms_mean": 4.4276,
+        "latency_ms_std": 2.053,
+        "call_frequency": 0.0625
+      },
+      "post-storage-service": {
+        "count": 40,
+        "latency_ms_quantiles": [
+          0.198,
+          0.2089,
+          0.2138,
+          0.2285,
+          0.2495,
+          0.281,
+          0.3124,
+          0.3295,
+          0.3757,
+          0.387
+        ],
+        "latency_ms_mean": 0.2583,
+        "latency_ms_std": 0.0415,
+        "call_frequency": 0.0625
+      },
+      "social-graph-service": {
+        "count": 60,
+        "latency_ms_quantiles": [
+          0.055,
+          0.059,
+          0.0628,
+          0.0815,
+          0.271,
+          0.35,
+          0.4256,
+          0.5135,
+          0.7718,
+          0.822
+        ],
+        "latency_ms_mean": 0.2652,
+        "latency_ms_std": 0.1671,
+        "call_frequency": 0.09375
+      },
+      "text-service": {
+        "count": 60,
+        "latency_ms_quantiles": [
+          0.549,
+          0.6567,
+          0.6706,
+          0.7748,
+          1.0085,
+          1.305,
+          1.5251,
+          1.7386,
+          2.037,
+          2.122
+        ],
+        "latency_ms_mean": 1.069,
+        "latency_ms_std": 0.3553,
+        "call_frequency": 0.09375
+      },
+      "unique-id-service": {
+        "count": 20,
+        "latency_ms_quantiles": [
+          0.008,
+          0.0099,
+          0.0109,
+          0.011,
+          0.013,
+          0.015,
+          0.0172,
+          0.0195,
+          0.0263,
+          0.028
+        ],
+        "latency_ms_mean": 0.0137,
+        "latency_ms_std": 0.0042,
+        "call_frequency": 0.03125
+      },
+      "url-shorten-service": {
+        "count": 40,
+        "latency_ms_quantiles": [
+          0.298,
+          0.324,
+          0.3464,
+          0.391,
+          0.486,
+          0.5958,
+          0.7101,
+          0.7809,
+          0.9031,
+          0.946
+        ],
+        "latency_ms_mean": 0.505,
+        "latency_ms_std": 0.1494,
+        "call_frequency": 0.0625
+      },
+      "user-mention-service": {
+        "count": 60,
+        "latency_ms_quantiles": [
+          0.202,
+          0.2179,
+          0.2354,
+          0.2745,
+          0.4715,
+          0.7598,
+          0.8635,
+          0.9177,
+          1.1393,
+          1.321
+        ],
+        "latency_ms_mean": 0.5102,
+        "latency_ms_std": 0.2604,
+        "call_frequency": 0.09375
+      },
+      "user-service": {
+        "count": 20,
+        "latency_ms_quantiles": [
+          0.005,
+          0.005,
+          0.005,
+          0.0057,
+          0.006,
+          0.007,
+          0.008,
+          0.008,
+          0.008,
+          0.008
+        ],
+        "latency_ms_mean": 0.0063,
+        "latency_ms_std": 0.001,
+        "call_frequency": 0.03125
+      },
+      "user-timeline-service": {
+        "count": 60,
+        "latency_ms_quantiles": [
+          0.074,
+          0.084,
+          0.086,
+          0.1062,
+          0.3095,
+          0.4153,
+          0.4878,
+          0.5792,
+          1.1601,
+          1.297
+        ],
+        "latency_ms_mean": 0.3193,
+        "latency_ms_std": 0.2246,
+        "call_frequency": 0.09375
+      }
+    }
+  },
+  "arrival": {
+    "source_files": [
+      "MSRTQps_0.csv"
+    ],
+    "quantile_levels": [
+      0.0,
+      0.05,
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      0.9,
+      0.95,
+      0.99,
+      1.0
+    ],
+    "call_rate_quantiles": [
+      0.01,
+      0.4833,
+      1.5,
+      5.0,
+      14.6652,
+      47.5667,
+      127.3333,
+      213.8667,
+      504.6,
+      62879.4846
+    ],
+    "call_rate_mean": 51.6986,
+    "call_rate_std": 209.3714,
+    "num_samples": 1600000,
+    "num_timestamps": 30,
+    "temporal_load_mult_quantiles": [
+      0.9708,
+      0.9737,
+      0.9788,
+      0.9883,
+      1.0,
+      1.0108,
+      1.0201,
+      1.0306,
+      1.0354,
+      1.0368
+    ],
+    "arrival_scale_p50_p95": 14.5833
+  }
+}

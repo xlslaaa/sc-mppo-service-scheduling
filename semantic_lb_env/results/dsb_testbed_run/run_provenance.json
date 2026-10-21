@@ -1,0 +1,1423 @@
+{
+  "affinity": [
+    6,
+    7
+  ],
+  "block_order": [
+    73,
+    72,
+    71,
+    79,
+    69,
+    75,
+    83,
+    70,
+    77,
+    81,
+    68,
+    78,
+    82,
+    74,
+    76,
+    80
+  ],
+  "code_sha256": {
+    "analysis_family_dsb_testbed.py": "12da5b13c3c1a1ad80596f01ea070a222a882677648d623042fd656e29f2e4e4",
+    "run_dsb_testbed.py": "b08607190d724739206049e735c4fe87a09b1b117d4f47c0d4f0ebd36c7a0d2d",
+    "testbed_compose.py": "b292dd62fd3195713a0b16bc95cc667fba281a74d0ded2c263a4f7b1818671bf",
+    "testbed_ctl.py": "38bf5bda12ba12a5e6ee4e83a0b0e602a88181b1417680f2018a52d78e2f5e5a",
+    "testbed_io.py": "bde7330f16fcf982379682a7f6249a702b1b35dc1cb54dc025392f33f0de391c",
+    "testbed_loop.py": "78ae6877e01ae2edbc933e18d4a2f7b22eda419d10a3d3e9e3949bd2da869db4",
+    "testbed_spec.py": "a922bf51e529f11ed9de4b2b2f03005fcd5b1e3718ea7117e64cb07381110a71"
+  },
+  "finished": "2026-10-20T04:55:38+0800",
+  "frozen": {
+    "budget_star": 0.75,
+    "interference_flag_cores": 3.741426484665237,
+    "kappa_tb": 63.865173522563474,
+    "kappa_trace": 46.094750320102435,
+    "lambda_star": 300.0,
+    "slot_cpus": {
+      "0": 0.0597,
+      "1": 0.0509,
+      "10": 0.0491,
+      "11": 0.0637,
+      "12": 0.0563,
+      "13": 0.0447,
+      "14": 0.0374,
+      "2": 0.0619,
+      "3": 0.0423,
+      "4": 0.0307,
+      "5": 0.065,
+      "6": 0.0594,
+      "7": 0.06,
+      "8": 0.0313,
+      "9": 0.0375
+    }
+  },
+  "probe_sha256": "6a469beff9d75a38aef792ffb9461d214142335ffd3bf4d251a97fe63d8f2235",
+  "sim_gate": {
+    "bitwise": true,
+    "bitwise_equal_cells": 296,
+    "cells": 296,
+    "columns": [
+      "mean_latency",
+      "p95_latency",
+      "p99_latency",
+      "sla_violation_rate",
+      "throughput_rate",
+      "failure_rate",
+      "mean_normalized_cost",
+      "valid_action_rate",
+      "semantic_match",
+      "deadline_miss_rate_prio_high",
+      "deadline_miss_rate_prio_mid",
+      "deadline_miss_rate_prio_low",
+      "sla_satisfaction_rate",
+      "cost_satisfaction_rate",
+      "failure_satisfaction_rate",
+      "all_constraints_satisfaction_rate",
+      "own_sla_satisfaction_rate",
+      "own_cost_satisfaction_rate",
+      "own_failure_satisfaction_rate",
+      "own_all_constraints_satisfaction_rate"
+    ],
+    "failures": [],
+    "seconds": 325.31380701065063
+  },
+  "snapshot_end": {
+    "docker_version": "24.0.2",
+    "images": {
+      "sha256:07c94a4ce3dfb36027bdf7c69b97150868f8e36b92691485552f00b6d3495c20": {
+        "repo_digests": [
+          "yg397/media-frontend@sha256:272049995f2929435b91da34f20fc16216a7f974d1b8f9afa0ccbb529f1a9840"
+        ],
+        "tags": [
+          "yg397/media-frontend:xenial"
+        ]
+      },
+      "sha256:24406d1ca8939651827dd1775d10707a29ad7dcca1462ff80004be28e364cf30": {
+        "repo_digests": [
+          "memcached@sha256:75c93cc91e76853da7c029e74d6e8dbd44774dd3713c93be8cd1971ad26120a4"
+        ],
+        "tags": [
+          "memcached:latest"
+        ]
+      },
+      "sha256:61ea24dc52c6396df1a77f7e1a00c1019b4dd7873228f1916de40628677e8824": {
+        "repo_digests": [
+          "mongo@sha256:6efa052039903e731e4a5550c68a13c4869ddc93742c716332883fd9c77eb79b"
+        ],
+        "tags": [
+          "mongo:4.4.6"
+        ]
+      },
+      "sha256:71414b07488e5c9bd7cd3bf0f30bbe8536a3d80f757ed586bd044d4500885a58": {
+        "repo_digests": [
+          "yg397/openresty-thrift@sha256:6c295fda3c2f6b941d85ebf16421bafac0dcf72450c96f53a2d031b29d8c81ef"
+        ],
+        "tags": [
+          "yg397/openresty-thrift:xenial"
+        ]
+      },
+      "sha256:923b31bc216c39d25b1c984d86704f49dbd5184f2ad949ca88fd4c23264c74e7": {
+        "repo_digests": [
+          "redis@sha256:298e5b3bc566bade82f46ad5511777a4a07a294097ce16ada2f6a42be5239df5"
+        ],
+        "tags": [
+          "redis:latest"
+        ]
+      },
+      "sha256:afadf04130616c76461930489c127d57fc9a9b73a272738e426d9869059e62fe": {
+        "repo_digests": [
+          "jaegertracing/all-in-one@sha256:ca6b733306168eae6257e6c5957c5f44ba406a3b0ae0d25074f1cf3a01f5ee8b"
+        ],
+        "tags": [
+          "jaegertracing/all-in-one:1.22"
+        ]
+      },
+      "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d": {
+        "repo_digests": [
+          "deathstarbench/social-network-microservices@sha256:a845266e98ce15d204ee7b98d41a2a95820af525013ce70f14104f5b9b5e92b6"
+        ],
+        "tags": [
+          "deathstarbench/social-network-microservices:latest"
+        ]
+      }
+    },
+    "project": "slbtb",
+    "services": {
+      "compose-post-service": {
+        "cpuset": "12-15",
+        "id": "d304603564c86907096f1b5b662ae7e1fafdc9a25415844da213e4a2f0ddfb57",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.24",
+        "memory": 536870912,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "home-timeline-redis": {
+        "cpuset": "12-15",
+        "id": "1c1f3d2bd2dba27adde976dfc058e399826e10afd2cd91c9dd67db4bfc3164fd",
+        "image_id": "sha256:923b31bc216c39d25b1c984d86704f49dbd5184f2ad949ca88fd4c23264c74e7",
+        "ip": "172.21.0.9",
+        "memory": 268435456,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "home-timeline-service": {
+        "cpuset": "12-15",
+        "id": "3117d38e150567cf9729edaa884a864c12ee35070f6b8d59eb1b82256b3f8dcc",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.30",
+        "memory": 536870912,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "jaeger-agent": {
+        "cpuset": "12-15",
+        "id": "5408dd687f840d866163b1d9d0ebde12aa212dc1904dc4659234ada74e52bf09",
+        "image_id": "sha256:afadf04130616c76461930489c127d57fc9a9b73a272738e426d9869059e62fe",
+        "ip": "172.21.0.6",
+        "memory": 1073741824,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "media-frontend": {
+        "cpuset": "12-15",
+        "id": "a0d697c67fd815b1b83a100a14458062d96a52c29d5a594e41c3c77209bf2216",
+        "image_id": "sha256:07c94a4ce3dfb36027bdf7c69b97150868f8e36b92691485552f00b6d3495c20",
+        "ip": "172.21.0.27",
+        "memory": 536870912,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "media-memcached": {
+        "cpuset": "12-15",
+        "id": "fc86a401aaa9f673e7ba1fa9d89a47b1a3b0f1b9e4c9b14d7b3b0c362d1a0a3b",
+        "image_id": "sha256:24406d1ca8939651827dd1775d10707a29ad7dcca1462ff80004be28e364cf30",
+        "ip": "172.21.0.7",
+        "memory": 134217728,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "media-mongodb": {
+        "cpuset": "12-15",
+        "id": "7555068b7b45799396e684b802a07e02b669e6d2289adc5864abd1cb86f8081d",
+        "image_id": "sha256:61ea24dc52c6396df1a77f7e1a00c1019b4dd7873228f1916de40628677e8824",
+        "ip": "172.21.0.13",
+        "memory": 1073741824,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "media-service": {
+        "cpuset": "12-15",
+        "id": "c610016abfa443c6888f7ecbe6d3b33388433b6f51e935defb1fd66af5846ca9",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.41",
+        "memory": 536870912,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "nginx-thrift": {
+        "cpuset": "12-15",
+        "id": "4db9904dfe3c7d4e198e8880fd50ae5bd72da2a4576ca934a24e85e4fbfa9883",
+        "image_id": "sha256:71414b07488e5c9bd7cd3bf0f30bbe8536a3d80f757ed586bd044d4500885a58",
+        "ip": "172.21.0.18",
+        "memory": 536870912,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "post-storage-memcached": {
+        "cpuset": "12-15",
+        "id": "0001ce1818f391660199fe42608d818371c27be74cbce276f729072dbfdd4921",
+        "image_id": "sha256:24406d1ca8939651827dd1775d10707a29ad7dcca1462ff80004be28e364cf30",
+        "ip": "172.21.0.3",
+        "memory": 134217728,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "post-storage-mongodb": {
+        "cpuset": "12-15",
+        "id": "dac2d67e7c9f915457a8c28aa77ddbe814f0d6b474822872edba903d311b5efa",
+        "image_id": "sha256:61ea24dc52c6396df1a77f7e1a00c1019b4dd7873228f1916de40628677e8824",
+        "ip": "172.21.0.5",
+        "memory": 1073741824,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "post-storage-service": {
+        "cpuset": "12-15",
+        "id": "3bc8d79501c1af6806f4a397f36228bb6b6b59d9fbdea9b5459237275a915f91",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.16",
+        "memory": 536870912,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot00-media-service": {
+        "cpuset": "8-11",
+        "id": "4dabda25e104cb8c0414b66f2ea1b4fb7923e5713690006613d2e998357c4a8f",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.40",
+        "memory": 536870912,
+        "nano_cpus": 59700000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot01-post-storage-service": {
+        "cpuset": "8-11",
+        "id": "1c4f2df155e65f892fecc68aebff4d2dfc875dd30d70f5cd37d8860b7d4b7242",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.29",
+        "memory": 536870912,
+        "nano_cpus": 50900000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot02-home-timeline-service": {
+        "cpuset": "8-11",
+        "id": "d3eb4c4ad417d728fc5e6e28a880866b47d416ff7f354ec2c1a170add536350e",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.19",
+        "memory": 536870912,
+        "nano_cpus": 61900000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot03-compose-post-service": {
+        "cpuset": "8-11",
+        "id": "70be63b71c494c518fd2b7dc56e6887c56f6e5d7e831c4c5441e405d64f004ef",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.33",
+        "memory": 536870912,
+        "nano_cpus": 42300000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot04-text-service": {
+        "cpuset": "8-11",
+        "id": "67c73204b4249d5d8e85b5706869e715dccf6fa54202f6468a97ceffcbf7cc7e",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.20",
+        "memory": 536870912,
+        "nano_cpus": 30700000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot05-social-graph-service": {
+        "cpuset": "8-11",
+        "id": "4a0f79f53a7537baee6743044978ee099a029128b9786f0245ef5eec588cccbb",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.35",
+        "memory": 536870912,
+        "nano_cpus": 65000000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot06-url-shorten-service": {
+        "cpuset": "8-11",
+        "id": "644c4eb708571d6d3c573f1a586e9d55f961418dec3226047071e0e165e11153",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.42",
+        "memory": 536870912,
+        "nano_cpus": 59400000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot07-user-service": {
+        "cpuset": "8-11",
+        "id": "e8bfe1912763607a57d46eaea8c358be9e058d2d3afe294d0e9df769b35476bb",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.38",
+        "memory": 536870912,
+        "nano_cpus": 60000000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot08-home-timeline-service": {
+        "cpuset": "8-11",
+        "id": "f71ae6ac716c3784a7e5ada907b1bcae2dbf156d6da8f909dd8a5ad13d81e573",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.32",
+        "memory": 536870912,
+        "nano_cpus": 31300000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot09-compose-post-service": {
+        "cpuset": "8-11",
+        "id": "4f70a4befc48e5154b5b196010265cd848d69f3fc6f45d2fbfa3cef61765b96c",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.21",
+        "memory": 536870912,
+        "nano_cpus": 37500000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot10-nginx-thrift": {
+        "cpuset": "8-11",
+        "id": "6ddffd4a416c8cb1d284a73e6445d9c52f1538d4eec86570dadeff657652077d",
+        "image_id": "sha256:71414b07488e5c9bd7cd3bf0f30bbe8536a3d80f757ed586bd044d4500885a58",
+        "ip": "172.21.0.34",
+        "memory": 536870912,
+        "nano_cpus": 49100000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot11-user-timeline-service": {
+        "cpuset": "8-11",
+        "id": "1f239ef959789b4694d660d10443370a1be6f7a99087b6b4d02f9b376c948e56",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.23",
+        "memory": 536870912,
+        "nano_cpus": 63700000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot12-social-graph-service": {
+        "cpuset": "8-11",
+        "id": "e97ee4b3338c28d496ec51f80e1f455ff9f2fcfbf85b0653392e5ac4dae74cc0",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.37",
+        "memory": 536870912,
+        "nano_cpus": 56300000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot13-user-mention-service": {
+        "cpuset": "8-11",
+        "id": "43ee9aede3a0db4c399b2cfcf37f60cbbd36047a21d07946661b0e811a84bc52",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.31",
+        "memory": 536870912,
+        "nano_cpus": 44700000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot14-unique-id-service": {
+        "cpuset": "8-11",
+        "id": "e0b5f26ff07975d7a165faea614232d3c8851436cbb0010d4714a9b06110ddc0",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.22",
+        "memory": 536870912,
+        "nano_cpus": 37400000,
+        "restart_count": 0,
+        "running": true
+      },
+      "social-graph-mongodb": {
+        "cpuset": "12-15",
+        "id": "d558eec4c8b75b9d8035f9f3d3e59db7c2c3238e67f4c2141427fcb91199ed18",
+        "image_id": "sha256:61ea24dc52c6396df1a77f7e1a00c1019b4dd7873228f1916de40628677e8824",
+        "ip": "172.21.0.10",
+        "memory": 1073741824,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "social-graph-redis": {
+        "cpuset": "12-15",
+        "id": "307b7646120cc31383dbccea5354722b1eb66977a4bc5f415a688fc15809bec3",
+        "image_id": "sha256:923b31bc216c39d25b1c984d86704f49dbd5184f2ad949ca88fd4c23264c74e7",
+        "ip": "172.21.0.8",
+        "memory": 268435456,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "social-graph-service": {
+        "cpuset": "12-15",
+        "id": "19c23d714ef967df5e4b05690272dc6d033496e0ce0f5462793e58d43b8045b6",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.36",
+        "memory": 536870912,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "text-service": {
+        "cpuset": "12-15",
+        "id": "db072b43ed89fad2105183a1a891238054364337906c3f145e268ba96326f92e",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.28",
+        "memory": 536870912,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "unique-id-service": {
+        "cpuset": "12-15",
+        "id": "8c73747095035e56725e00d252750f7ae971761fc9bdf1765b63d9647be6dcd3",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.17",
+        "memory": 536870912,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "url-shorten-memcached": {
+        "cpuset": "12-15",
+        "id": "30cb4969f8cd7d560ea2367d979fa6d595439dbe9e3c29e32d36cd5ee718d19a",
+        "image_id": "sha256:24406d1ca8939651827dd1775d10707a29ad7dcca1462ff80004be28e364cf30",
+        "ip": "172.21.0.4",
+        "memory": 134217728,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "url-shorten-mongodb": {
+        "cpuset": "12-15",
+        "id": "c1fc541de643ff23cd2c58329b8da1a8a41d3ee529732279e6dbe38516bb4b19",
+        "image_id": "sha256:61ea24dc52c6396df1a77f7e1a00c1019b4dd7873228f1916de40628677e8824",
+        "ip": "172.21.0.12",
+        "memory": 1073741824,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "url-shorten-service": {
+        "cpuset": "12-15",
+        "id": "13cbb22f63043b3ce284896f8f4a6a5203ad9548dd150cf116331a4e1a0354cf",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.43",
+        "memory": 536870912,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "user-memcached": {
+        "cpuset": "12-15",
+        "id": "bcca41c852da32608ceb0d006df423a13fc7b3e6ed5edf86fd065fc30333742f",
+        "image_id": "sha256:24406d1ca8939651827dd1775d10707a29ad7dcca1462ff80004be28e364cf30",
+        "ip": "172.21.0.14",
+        "memory": 134217728,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "user-mention-service": {
+        "cpuset": "12-15",
+        "id": "31963ddaa8d029c18123dc29a2c04fc7fb5880b52c8e43a699a3c7bac6a3e2a5",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.25",
+        "memory": 536870912,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "user-mongodb": {
+        "cpuset": "12-15",
+        "id": "c0eda9ee619fba097c822d120fc3b2a03fd34f30c6dd76b1ef5f2ff074c50044",
+        "image_id": "sha256:61ea24dc52c6396df1a77f7e1a00c1019b4dd7873228f1916de40628677e8824",
+        "ip": "172.21.0.11",
+        "memory": 1073741824,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "user-service": {
+        "cpuset": "12-15",
+        "id": "fbb3fc2bc03a363cf966d37badaacf754a2fe9d0747be143123e57b2f1275698",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.39",
+        "memory": 536870912,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "user-timeline-mongodb": {
+        "cpuset": "12-15",
+        "id": "2d5e4c4ec6799f54fc213f32e7cbee81d0ecdd3b304e0ad54f1835651f865daf",
+        "image_id": "sha256:61ea24dc52c6396df1a77f7e1a00c1019b4dd7873228f1916de40628677e8824",
+        "ip": "172.21.0.2",
+        "memory": 1073741824,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "user-timeline-redis": {
+        "cpuset": "12-15",
+        "id": "12625f795b40871ebf108919284bd4a94e70d4996e599a8e2f68fc667d097a3d",
+        "image_id": "sha256:923b31bc216c39d25b1c984d86704f49dbd5184f2ad949ca88fd4c23264c74e7",
+        "ip": "172.21.0.15",
+        "memory": 268435456,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "user-timeline-service": {
+        "cpuset": "12-15",
+        "id": "4bf31038e6080dde30819aa86d8254807fa6154fe19380753c1be2650b780be8",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.26",
+        "memory": 536870912,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      }
+    },
+    "slots": {
+      "0": {
+        "cpuset": "8-11",
+        "id": "4dabda25e104cb8c0414b66f2ea1b4fb7923e5713690006613d2e998357c4a8f",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.40",
+        "memory": 536870912,
+        "name": "slot00-media-service",
+        "nano_cpus": 59700000,
+        "restart_count": 0,
+        "running": true,
+        "service": "media-service"
+      },
+      "1": {
+        "cpuset": "8-11",
+        "id": "1c4f2df155e65f892fecc68aebff4d2dfc875dd30d70f5cd37d8860b7d4b7242",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.29",
+        "memory": 536870912,
+        "name": "slot01-post-storage-service",
+        "nano_cpus": 50900000,
+        "restart_count": 0,
+        "running": true,
+        "service": "post-storage-service"
+      },
+      "2": {
+        "cpuset": "8-11",
+        "id": "d3eb4c4ad417d728fc5e6e28a880866b47d416ff7f354ec2c1a170add536350e",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.19",
+        "memory": 536870912,
+        "name": "slot02-home-timeline-service",
+        "nano_cpus": 61900000,
+        "restart_count": 0,
+        "running": true,
+        "service": "home-timeline-service"
+      },
+      "3": {
+        "cpuset": "8-11",
+        "id": "70be63b71c494c518fd2b7dc56e6887c56f6e5d7e831c4c5441e405d64f004ef",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.33",
+        "memory": 536870912,
+        "name": "slot03-compose-post-service",
+        "nano_cpus": 42300000,
+        "restart_count": 0,
+        "running": true,
+        "service": "compose-post-service"
+      },
+      "4": {
+        "cpuset": "8-11",
+        "id": "67c73204b4249d5d8e85b5706869e715dccf6fa54202f6468a97ceffcbf7cc7e",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.20",
+        "memory": 536870912,
+        "name": "slot04-text-service",
+        "nano_cpus": 30700000,
+        "restart_count": 0,
+        "running": true,
+        "service": "text-service"
+      },
+      "5": {
+        "cpuset": "8-11",
+        "id": "4a0f79f53a7537baee6743044978ee099a029128b9786f0245ef5eec588cccbb",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.35",
+        "memory": 536870912,
+        "name": "slot05-social-graph-service",
+        "nano_cpus": 65000000,
+        "restart_count": 0,
+        "running": true,
+        "service": "social-graph-service"
+      },
+      "6": {
+        "cpuset": "8-11",
+        "id": "644c4eb708571d6d3c573f1a586e9d55f961418dec3226047071e0e165e11153",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.42",
+        "memory": 536870912,
+        "name": "slot06-url-shorten-service",
+        "nano_cpus": 59400000,
+        "restart_count": 0,
+        "running": true,
+        "service": "url-shorten-service"
+      },
+      "7": {
+        "cpuset": "8-11",
+        "id": "e8bfe1912763607a57d46eaea8c358be9e058d2d3afe294d0e9df769b35476bb",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.38",
+        "memory": 536870912,
+        "name": "slot07-user-service",
+        "nano_cpus": 60000000,
+        "restart_count": 0,
+        "running": true,
+        "service": "user-service"
+      },
+      "8": {
+        "cpuset": "8-11",
+        "id": "f71ae6ac716c3784a7e5ada907b1bcae2dbf156d6da8f909dd8a5ad13d81e573",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.32",
+        "memory": 536870912,
+        "name": "slot08-home-timeline-service",
+        "nano_cpus": 31300000,
+        "restart_count": 0,
+        "running": true,
+        "service": "home-timeline-service"
+      },
+      "9": {
+        "cpuset": "8-11",
+        "id": "4f70a4befc48e5154b5b196010265cd848d69f3fc6f45d2fbfa3cef61765b96c",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.21",
+        "memory": 536870912,
+        "name": "slot09-compose-post-service",
+        "nano_cpus": 37500000,
+        "restart_count": 0,
+        "running": true,
+        "service": "compose-post-service"
+      },
+      "10": {
+        "cpuset": "8-11",
+        "id": "6ddffd4a416c8cb1d284a73e6445d9c52f1538d4eec86570dadeff657652077d",
+        "image_id": "sha256:71414b07488e5c9bd7cd3bf0f30bbe8536a3d80f757ed586bd044d4500885a58",
+        "ip": "172.21.0.34",
+        "memory": 536870912,
+        "name": "slot10-nginx-thrift",
+        "nano_cpus": 49100000,
+        "restart_count": 0,
+        "running": true,
+        "service": "nginx-web-server"
+      },
+      "11": {
+        "cpuset": "8-11",
+        "id": "1f239ef959789b4694d660d10443370a1be6f7a99087b6b4d02f9b376c948e56",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.23",
+        "memory": 536870912,
+        "name": "slot11-user-timeline-service",
+        "nano_cpus": 63700000,
+        "restart_count": 0,
+        "running": true,
+        "service": "user-timeline-service"
+      },
+      "12": {
+        "cpuset": "8-11",
+        "id": "e97ee4b3338c28d496ec51f80e1f455ff9f2fcfbf85b0653392e5ac4dae74cc0",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.37",
+        "memory": 536870912,
+        "name": "slot12-social-graph-service",
+        "nano_cpus": 56300000,
+        "restart_count": 0,
+        "running": true,
+        "service": "social-graph-service"
+      },
+      "13": {
+        "cpuset": "8-11",
+        "id": "43ee9aede3a0db4c399b2cfcf37f60cbbd36047a21d07946661b0e811a84bc52",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.31",
+        "memory": 536870912,
+        "name": "slot13-user-mention-service",
+        "nano_cpus": 44700000,
+        "restart_count": 0,
+        "running": true,
+        "service": "user-mention-service"
+      },
+      "14": {
+        "cpuset": "8-11",
+        "id": "e0b5f26ff07975d7a165faea614232d3c8851436cbb0010d4714a9b06110ddc0",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.22",
+        "memory": 536870912,
+        "name": "slot14-unique-id-service",
+        "nano_cpus": 37400000,
+        "restart_count": 0,
+        "running": true,
+        "service": "unique-id-service"
+      }
+    }
+  },
+  "snapshot_start": {
+    "docker_version": "24.0.2",
+    "images": {
+      "sha256:07c94a4ce3dfb36027bdf7c69b97150868f8e36b92691485552f00b6d3495c20": {
+        "repo_digests": [
+          "yg397/media-frontend@sha256:272049995f2929435b91da34f20fc16216a7f974d1b8f9afa0ccbb529f1a9840"
+        ],
+        "tags": [
+          "yg397/media-frontend:xenial"
+        ]
+      },
+      "sha256:24406d1ca8939651827dd1775d10707a29ad7dcca1462ff80004be28e364cf30": {
+        "repo_digests": [
+          "memcached@sha256:75c93cc91e76853da7c029e74d6e8dbd44774dd3713c93be8cd1971ad26120a4"
+        ],
+        "tags": [
+          "memcached:latest"
+        ]
+      },
+      "sha256:61ea24dc52c6396df1a77f7e1a00c1019b4dd7873228f1916de40628677e8824": {
+        "repo_digests": [
+          "mongo@sha256:6efa052039903e731e4a5550c68a13c4869ddc93742c716332883fd9c77eb79b"
+        ],
+        "tags": [
+          "mongo:4.4.6"
+        ]
+      },
+      "sha256:71414b07488e5c9bd7cd3bf0f30bbe8536a3d80f757ed586bd044d4500885a58": {
+        "repo_digests": [
+          "yg397/openresty-thrift@sha256:6c295fda3c2f6b941d85ebf16421bafac0dcf72450c96f53a2d031b29d8c81ef"
+        ],
+        "tags": [
+          "yg397/openresty-thrift:xenial"
+        ]
+      },
+      "sha256:923b31bc216c39d25b1c984d86704f49dbd5184f2ad949ca88fd4c23264c74e7": {
+        "repo_digests": [
+          "redis@sha256:298e5b3bc566bade82f46ad5511777a4a07a294097ce16ada2f6a42be5239df5"
+        ],
+        "tags": [
+          "redis:latest"
+        ]
+      },
+      "sha256:afadf04130616c76461930489c127d57fc9a9b73a272738e426d9869059e62fe": {
+        "repo_digests": [
+          "jaegertracing/all-in-one@sha256:ca6b733306168eae6257e6c5957c5f44ba406a3b0ae0d25074f1cf3a01f5ee8b"
+        ],
+        "tags": [
+          "jaegertracing/all-in-one:1.22"
+        ]
+      },
+      "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d": {
+        "repo_digests": [
+          "deathstarbench/social-network-microservices@sha256:a845266e98ce15d204ee7b98d41a2a95820af525013ce70f14104f5b9b5e92b6"
+        ],
+        "tags": [
+          "deathstarbench/social-network-microservices:latest"
+        ]
+      }
+    },
+    "project": "slbtb",
+    "services": {
+      "compose-post-service": {
+        "cpuset": "12-15",
+        "id": "d304603564c86907096f1b5b662ae7e1fafdc9a25415844da213e4a2f0ddfb57",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.24",
+        "memory": 536870912,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "home-timeline-redis": {
+        "cpuset": "12-15",
+        "id": "1c1f3d2bd2dba27adde976dfc058e399826e10afd2cd91c9dd67db4bfc3164fd",
+        "image_id": "sha256:923b31bc216c39d25b1c984d86704f49dbd5184f2ad949ca88fd4c23264c74e7",
+        "ip": "172.21.0.9",
+        "memory": 268435456,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "home-timeline-service": {
+        "cpuset": "12-15",
+        "id": "3117d38e150567cf9729edaa884a864c12ee35070f6b8d59eb1b82256b3f8dcc",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.30",
+        "memory": 536870912,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "jaeger-agent": {
+        "cpuset": "12-15",
+        "id": "5408dd687f840d866163b1d9d0ebde12aa212dc1904dc4659234ada74e52bf09",
+        "image_id": "sha256:afadf04130616c76461930489c127d57fc9a9b73a272738e426d9869059e62fe",
+        "ip": "172.21.0.6",
+        "memory": 1073741824,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "media-frontend": {
+        "cpuset": "12-15",
+        "id": "a0d697c67fd815b1b83a100a14458062d96a52c29d5a594e41c3c77209bf2216",
+        "image_id": "sha256:07c94a4ce3dfb36027bdf7c69b97150868f8e36b92691485552f00b6d3495c20",
+        "ip": "172.21.0.27",
+        "memory": 536870912,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "media-memcached": {
+        "cpuset": "12-15",
+        "id": "fc86a401aaa9f673e7ba1fa9d89a47b1a3b0f1b9e4c9b14d7b3b0c362d1a0a3b",
+        "image_id": "sha256:24406d1ca8939651827dd1775d10707a29ad7dcca1462ff80004be28e364cf30",
+        "ip": "172.21.0.7",
+        "memory": 134217728,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "media-mongodb": {
+        "cpuset": "12-15",
+        "id": "7555068b7b45799396e684b802a07e02b669e6d2289adc5864abd1cb86f8081d",
+        "image_id": "sha256:61ea24dc52c6396df1a77f7e1a00c1019b4dd7873228f1916de40628677e8824",
+        "ip": "172.21.0.13",
+        "memory": 1073741824,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "media-service": {
+        "cpuset": "12-15",
+        "id": "c610016abfa443c6888f7ecbe6d3b33388433b6f51e935defb1fd66af5846ca9",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.41",
+        "memory": 536870912,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "nginx-thrift": {
+        "cpuset": "12-15",
+        "id": "4db9904dfe3c7d4e198e8880fd50ae5bd72da2a4576ca934a24e85e4fbfa9883",
+        "image_id": "sha256:71414b07488e5c9bd7cd3bf0f30bbe8536a3d80f757ed586bd044d4500885a58",
+        "ip": "172.21.0.18",
+        "memory": 536870912,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "post-storage-memcached": {
+        "cpuset": "12-15",
+        "id": "0001ce1818f391660199fe42608d818371c27be74cbce276f729072dbfdd4921",
+        "image_id": "sha256:24406d1ca8939651827dd1775d10707a29ad7dcca1462ff80004be28e364cf30",
+        "ip": "172.21.0.3",
+        "memory": 134217728,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "post-storage-mongodb": {
+        "cpuset": "12-15",
+        "id": "dac2d67e7c9f915457a8c28aa77ddbe814f0d6b474822872edba903d311b5efa",
+        "image_id": "sha256:61ea24dc52c6396df1a77f7e1a00c1019b4dd7873228f1916de40628677e8824",
+        "ip": "172.21.0.5",
+        "memory": 1073741824,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "post-storage-service": {
+        "cpuset": "12-15",
+        "id": "3bc8d79501c1af6806f4a397f36228bb6b6b59d9fbdea9b5459237275a915f91",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.16",
+        "memory": 536870912,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot00-media-service": {
+        "cpuset": "8-11",
+        "id": "4dabda25e104cb8c0414b66f2ea1b4fb7923e5713690006613d2e998357c4a8f",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.40",
+        "memory": 536870912,
+        "nano_cpus": 59700000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot01-post-storage-service": {
+        "cpuset": "8-11",
+        "id": "1c4f2df155e65f892fecc68aebff4d2dfc875dd30d70f5cd37d8860b7d4b7242",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.29",
+        "memory": 536870912,
+        "nano_cpus": 50900000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot02-home-timeline-service": {
+        "cpuset": "8-11",
+        "id": "d3eb4c4ad417d728fc5e6e28a880866b47d416ff7f354ec2c1a170add536350e",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.19",
+        "memory": 536870912,
+        "nano_cpus": 61900000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot03-compose-post-service": {
+        "cpuset": "8-11",
+        "id": "70be63b71c494c518fd2b7dc56e6887c56f6e5d7e831c4c5441e405d64f004ef",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.33",
+        "memory": 536870912,
+        "nano_cpus": 42300000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot04-text-service": {
+        "cpuset": "8-11",
+        "id": "67c73204b4249d5d8e85b5706869e715dccf6fa54202f6468a97ceffcbf7cc7e",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.20",
+        "memory": 536870912,
+        "nano_cpus": 30700000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot05-social-graph-service": {
+        "cpuset": "8-11",
+        "id": "4a0f79f53a7537baee6743044978ee099a029128b9786f0245ef5eec588cccbb",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.35",
+        "memory": 536870912,
+        "nano_cpus": 65000000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot06-url-shorten-service": {
+        "cpuset": "8-11",
+        "id": "644c4eb708571d6d3c573f1a586e9d55f961418dec3226047071e0e165e11153",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.42",
+        "memory": 536870912,
+        "nano_cpus": 59400000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot07-user-service": {
+        "cpuset": "8-11",
+        "id": "e8bfe1912763607a57d46eaea8c358be9e058d2d3afe294d0e9df769b35476bb",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.38",
+        "memory": 536870912,
+        "nano_cpus": 60000000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot08-home-timeline-service": {
+        "cpuset": "8-11",
+        "id": "f71ae6ac716c3784a7e5ada907b1bcae2dbf156d6da8f909dd8a5ad13d81e573",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.32",
+        "memory": 536870912,
+        "nano_cpus": 31300000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot09-compose-post-service": {
+        "cpuset": "8-11",
+        "id": "4f70a4befc48e5154b5b196010265cd848d69f3fc6f45d2fbfa3cef61765b96c",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.21",
+        "memory": 536870912,
+        "nano_cpus": 37500000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot10-nginx-thrift": {
+        "cpuset": "8-11",
+        "id": "6ddffd4a416c8cb1d284a73e6445d9c52f1538d4eec86570dadeff657652077d",
+        "image_id": "sha256:71414b07488e5c9bd7cd3bf0f30bbe8536a3d80f757ed586bd044d4500885a58",
+        "ip": "172.21.0.34",
+        "memory": 536870912,
+        "nano_cpus": 49100000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot11-user-timeline-service": {
+        "cpuset": "8-11",
+        "id": "1f239ef959789b4694d660d10443370a1be6f7a99087b6b4d02f9b376c948e56",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.23",
+        "memory": 536870912,
+        "nano_cpus": 63700000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot12-social-graph-service": {
+        "cpuset": "8-11",
+        "id": "e97ee4b3338c28d496ec51f80e1f455ff9f2fcfbf85b0653392e5ac4dae74cc0",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.37",
+        "memory": 536870912,
+        "nano_cpus": 56300000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot13-user-mention-service": {
+        "cpuset": "8-11",
+        "id": "43ee9aede3a0db4c399b2cfcf37f60cbbd36047a21d07946661b0e811a84bc52",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.31",
+        "memory": 536870912,
+        "nano_cpus": 44700000,
+        "restart_count": 0,
+        "running": true
+      },
+      "slot14-unique-id-service": {
+        "cpuset": "8-11",
+        "id": "e0b5f26ff07975d7a165faea614232d3c8851436cbb0010d4714a9b06110ddc0",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.22",
+        "memory": 536870912,
+        "nano_cpus": 37400000,
+        "restart_count": 0,
+        "running": true
+      },
+      "social-graph-mongodb": {
+        "cpuset": "12-15",
+        "id": "d558eec4c8b75b9d8035f9f3d3e59db7c2c3238e67f4c2141427fcb91199ed18",
+        "image_id": "sha256:61ea24dc52c6396df1a77f7e1a00c1019b4dd7873228f1916de40628677e8824",
+        "ip": "172.21.0.10",
+        "memory": 1073741824,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "social-graph-redis": {
+        "cpuset": "12-15",
+        "id": "307b7646120cc31383dbccea5354722b1eb66977a4bc5f415a688fc15809bec3",
+        "image_id": "sha256:923b31bc216c39d25b1c984d86704f49dbd5184f2ad949ca88fd4c23264c74e7",
+        "ip": "172.21.0.8",
+        "memory": 268435456,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "social-graph-service": {
+        "cpuset": "12-15",
+        "id": "19c23d714ef967df5e4b05690272dc6d033496e0ce0f5462793e58d43b8045b6",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.36",
+        "memory": 536870912,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "text-service": {
+        "cpuset": "12-15",
+        "id": "db072b43ed89fad2105183a1a891238054364337906c3f145e268ba96326f92e",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.28",
+        "memory": 536870912,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "unique-id-service": {
+        "cpuset": "12-15",
+        "id": "8c73747095035e56725e00d252750f7ae971761fc9bdf1765b63d9647be6dcd3",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.17",
+        "memory": 536870912,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "url-shorten-memcached": {
+        "cpuset": "12-15",
+        "id": "30cb4969f8cd7d560ea2367d979fa6d595439dbe9e3c29e32d36cd5ee718d19a",
+        "image_id": "sha256:24406d1ca8939651827dd1775d10707a29ad7dcca1462ff80004be28e364cf30",
+        "ip": "172.21.0.4",
+        "memory": 134217728,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "url-shorten-mongodb": {
+        "cpuset": "12-15",
+        "id": "c1fc541de643ff23cd2c58329b8da1a8a41d3ee529732279e6dbe38516bb4b19",
+        "image_id": "sha256:61ea24dc52c6396df1a77f7e1a00c1019b4dd7873228f1916de40628677e8824",
+        "ip": "172.21.0.12",
+        "memory": 1073741824,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "url-shorten-service": {
+        "cpuset": "12-15",
+        "id": "13cbb22f63043b3ce284896f8f4a6a5203ad9548dd150cf116331a4e1a0354cf",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.43",
+        "memory": 536870912,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "user-memcached": {
+        "cpuset": "12-15",
+        "id": "bcca41c852da32608ceb0d006df423a13fc7b3e6ed5edf86fd065fc30333742f",
+        "image_id": "sha256:24406d1ca8939651827dd1775d10707a29ad7dcca1462ff80004be28e364cf30",
+        "ip": "172.21.0.14",
+        "memory": 134217728,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "user-mention-service": {
+        "cpuset": "12-15",
+        "id": "31963ddaa8d029c18123dc29a2c04fc7fb5880b52c8e43a699a3c7bac6a3e2a5",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.25",
+        "memory": 536870912,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "user-mongodb": {
+        "cpuset": "12-15",
+        "id": "c0eda9ee619fba097c822d120fc3b2a03fd34f30c6dd76b1ef5f2ff074c50044",
+        "image_id": "sha256:61ea24dc52c6396df1a77f7e1a00c1019b4dd7873228f1916de40628677e8824",
+        "ip": "172.21.0.11",
+        "memory": 1073741824,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "user-service": {
+        "cpuset": "12-15",
+        "id": "fbb3fc2bc03a363cf966d37badaacf754a2fe9d0747be143123e57b2f1275698",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.39",
+        "memory": 536870912,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "user-timeline-mongodb": {
+        "cpuset": "12-15",
+        "id": "2d5e4c4ec6799f54fc213f32e7cbee81d0ecdd3b304e0ad54f1835651f865daf",
+        "image_id": "sha256:61ea24dc52c6396df1a77f7e1a00c1019b4dd7873228f1916de40628677e8824",
+        "ip": "172.21.0.2",
+        "memory": 1073741824,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "user-timeline-redis": {
+        "cpuset": "12-15",
+        "id": "12625f795b40871ebf108919284bd4a94e70d4996e599a8e2f68fc667d097a3d",
+        "image_id": "sha256:923b31bc216c39d25b1c984d86704f49dbd5184f2ad949ca88fd4c23264c74e7",
+        "ip": "172.21.0.15",
+        "memory": 268435456,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      },
+      "user-timeline-service": {
+        "cpuset": "12-15",
+        "id": "4bf31038e6080dde30819aa86d8254807fa6154fe19380753c1be2650b780be8",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.26",
+        "memory": 536870912,
+        "nano_cpus": 0,
+        "restart_count": 0,
+        "running": true
+      }
+    },
+    "slots": {
+      "0": {
+        "cpuset": "8-11",
+        "id": "4dabda25e104cb8c0414b66f2ea1b4fb7923e5713690006613d2e998357c4a8f",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.40",
+        "memory": 536870912,
+        "name": "slot00-media-service",
+        "nano_cpus": 59700000,
+        "restart_count": 0,
+        "running": true,
+        "service": "media-service"
+      },
+      "1": {
+        "cpuset": "8-11",
+        "id": "1c4f2df155e65f892fecc68aebff4d2dfc875dd30d70f5cd37d8860b7d4b7242",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.29",
+        "memory": 536870912,
+        "name": "slot01-post-storage-service",
+        "nano_cpus": 50900000,
+        "restart_count": 0,
+        "running": true,
+        "service": "post-storage-service"
+      },
+      "10": {
+        "cpuset": "8-11",
+        "id": "6ddffd4a416c8cb1d284a73e6445d9c52f1538d4eec86570dadeff657652077d",
+        "image_id": "sha256:71414b07488e5c9bd7cd3bf0f30bbe8536a3d80f757ed586bd044d4500885a58",
+        "ip": "172.21.0.34",
+        "memory": 536870912,
+        "name": "slot10-nginx-thrift",
+        "nano_cpus": 49100000,
+        "restart_count": 0,
+        "running": true,
+        "service": "nginx-web-server"
+      },
+      "11": {
+        "cpuset": "8-11",
+        "id": "1f239ef959789b4694d660d10443370a1be6f7a99087b6b4d02f9b376c948e56",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.23",
+        "memory": 536870912,
+        "name": "slot11-user-timeline-service",
+        "nano_cpus": 63700000,
+        "restart_count": 0,
+        "running": true,
+        "service": "user-timeline-service"
+      },
+      "12": {
+        "cpuset": "8-11",
+        "id": "e97ee4b3338c28d496ec51f80e1f455ff9f2fcfbf85b0653392e5ac4dae74cc0",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.37",
+        "memory": 536870912,
+        "name": "slot12-social-graph-service",
+        "nano_cpus": 56300000,
+        "restart_count": 0,
+        "running": true,
+        "service": "social-graph-service"
+      },
+      "13": {
+        "cpuset": "8-11",
+        "id": "43ee9aede3a0db4c399b2cfcf37f60cbbd36047a21d07946661b0e811a84bc52",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.31",
+        "memory": 536870912,
+        "name": "slot13-user-mention-service",
+        "nano_cpus": 44700000,
+        "restart_count": 0,
+        "running": true,
+        "service": "user-mention-service"
+      },
+      "14": {
+        "cpuset": "8-11",
+        "id": "e0b5f26ff07975d7a165faea614232d3c8851436cbb0010d4714a9b06110ddc0",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.22",
+        "memory": 536870912,
+        "name": "slot14-unique-id-service",
+        "nano_cpus": 37400000,
+        "restart_count": 0,
+        "running": true,
+        "service": "unique-id-service"
+      },
+      "2": {
+        "cpuset": "8-11",
+        "id": "d3eb4c4ad417d728fc5e6e28a880866b47d416ff7f354ec2c1a170add536350e",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.19",
+        "memory": 536870912,
+        "name": "slot02-home-timeline-service",
+        "nano_cpus": 61900000,
+        "restart_count": 0,
+        "running": true,
+        "service": "home-timeline-service"
+      },
+      "3": {
+        "cpuset": "8-11",
+        "id": "70be63b71c494c518fd2b7dc56e6887c56f6e5d7e831c4c5441e405d64f004ef",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.33",
+        "memory": 536870912,
+        "name": "slot03-compose-post-service",
+        "nano_cpus": 42300000,
+        "restart_count": 0,
+        "running": true,
+        "service": "compose-post-service"
+      },
+      "4": {
+        "cpuset": "8-11",
+        "id": "67c73204b4249d5d8e85b5706869e715dccf6fa54202f6468a97ceffcbf7cc7e",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.20",
+        "memory": 536870912,
+        "name": "slot04-text-service",
+        "nano_cpus": 30700000,
+        "restart_count": 0,
+        "running": true,
+        "service": "text-service"
+      },
+      "5": {
+        "cpuset": "8-11",
+        "id": "4a0f79f53a7537baee6743044978ee099a029128b9786f0245ef5eec588cccbb",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.35",
+        "memory": 536870912,
+        "name": "slot05-social-graph-service",
+        "nano_cpus": 65000000,
+        "restart_count": 0,
+        "running": true,
+        "service": "social-graph-service"
+      },
+      "6": {
+        "cpuset": "8-11",
+        "id": "644c4eb708571d6d3c573f1a586e9d55f961418dec3226047071e0e165e11153",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.42",
+        "memory": 536870912,
+        "name": "slot06-url-shorten-service",
+        "nano_cpus": 59400000,
+        "restart_count": 0,
+        "running": true,
+        "service": "url-shorten-service"
+      },
+      "7": {
+        "cpuset": "8-11",
+        "id": "e8bfe1912763607a57d46eaea8c358be9e058d2d3afe294d0e9df769b35476bb",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.38",
+        "memory": 536870912,
+        "name": "slot07-user-service",
+        "nano_cpus": 60000000,
+        "restart_count": 0,
+        "running": true,
+        "service": "user-service"
+      },
+      "8": {
+        "cpuset": "8-11",
+        "id": "f71ae6ac716c3784a7e5ada907b1bcae2dbf156d6da8f909dd8a5ad13d81e573",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.32",
+        "memory": 536870912,
+        "name": "slot08-home-timeline-service",
+        "nano_cpus": 31300000,
+        "restart_count": 0,
+        "running": true,
+        "service": "home-timeline-service"
+      },
+      "9": {
+        "cpuset": "8-11",
+        "id": "4f70a4befc48e5154b5b196010265cd848d69f3fc6f45d2fbfa3cef61765b96c",
+        "image_id": "sha256:f0c209ccea2026eed1f675c626f073f8a800d2e257928698cdac874405858e7d",
+        "ip": "172.21.0.21",
+        "memory": 536870912,
+        "name": "slot09-compose-post-service",
+        "nano_cpus": 37500000,
+        "restart_count": 0,
+        "running": true,
+        "service": "compose-post-service"
+      }
+    }
+  },
+  "stream_sha256": "f283bb8fabb9c1207c198932b144450819f8614f5bd640e298b96e24adcde1c9",
+  "thread_env_vars": [],
+  "torch_threads": 1
+}
